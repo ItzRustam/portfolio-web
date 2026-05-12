@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rustam Singh | AI/ML Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .glow1,
+    .glow2 {
+      position: absolute;
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    .glow1 {
+      background: purple;
+      top: 0;
+      left: 0;
+    }
+
+    .glow2 {
+      background: blue;
+      bottom: 0;
+      right: 0;
+    }
+
+    h1 {
+      font-size: 5rem;
+      background: linear-gradient(to right, #c084fc, #60a5fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 800px;
+      font-size: 1.3rem;
+      color: #cfcfcf;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #9333ea;
+    }
+
+    .btn-primary:hover {
+      background: #7e22ce;
+      transform: scale(1.05);
+    }
+
+    .btn-outline {
+      border: 1px solid #555;
+    }
+
+    .btn-outline:hover {
+      border-color: #a855f7;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 20px;
+      padding: 30px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #9333ea;
+      transform: translateY(-5px);
+    }
+
+    .card p {
+      color: #cfcfcf;
+      line-height: 1.7;
+    }
+
+    .skills,
+    .services,
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-box,
+    .service-box {
+      background: #111;
+      border: 1px solid #222;
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .skill-box:hover,
+    .service-box:hover {
+      border-color: #3b82f6;
+      transform: scale(1.05);
+    }
+
+    .project-card {
+      background: #111;
+      border: 1px solid #222;
+      padding: 30px;
+      border-radius: 22px;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      border-color: #9333ea;
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #c084fc;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+    }
+
+    .project-card p {
+      color: #d1d1d1;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: rgba(147, 51, 234, 0.2);
+      border: 1px solid #9333ea;
+      padding: 8px 14px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 50px 20px;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .section-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero container">
+    <div class="glow1"></div>
+    <div class="glow2"></div>
+
+    <h1>Rustam Singh</h1>
+
+    <p>
+      Python & AI Developer building custom LLMs, Transformer architectures,
+      ML frameworks, automation systems, Discord Bot and intelligent assistants.
+    </p>
+
+    <div class="buttons">
+      <a href="https://github.com/ItzRustam" target="_blank" class="btn btn-primary">
+        View GitHub
+      </a>
+
+      <!-- <a href="mailto:rustambhadouriya7@gmail.com" class="btn btn-outline">
+        Contact Me
+      </a> -->
+      
+      <a href="resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
+
+    </div>
+    <div class="buttons">
+      <p class="btn btn-primary">itz_rustam (discord)</p>
+    </div>
+  </div>
+
+  <section class="container">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+      <div class="card">
+        <p>
+          I am an AI and Python developer focused on building advanced machine
+          learning systems from scratch. 
+          <br>
+          My work includes custom Transformer
+          implementations, LLM architectures, AI assistants, ML frameworks,
+          and Linux automation tools & Discord Bots.
+        </p>
+      </div>
+      <div class="card">
+        <p>📍 Orai, Uttar Pradesh, India</p>
+        <br>
+        <p>⚡ AI / ML Engineering</p>
+        <br>
+        <p>🐍 Python Specialist</p>
+        <br>
+        <p>🧠 LLM & Transformer Development</p>
+        <br>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Tech Stack</h2>
+
+    <div class="skills">
+      <div class="skill-box">Python</div>
+      <div class="skill-box">C++</div>
+      <div class="skill-box">PyTorch</div>
+      <div class="skill-box">TensorFlow</div>
+      <div class="skill-box">NumPy</div>
+      <div class="skill-box">Pandas</div>
+      <div class="skill-box">Transformers</div>
+      <div class="skill-box">LLMs</div>
+      <div class="skill-box">Machine Learning</div>
+      <div class="skill-box">Deep Learning</div>
+      <div class="skill-box">Discord Bots</div>
+      <div class="skill-box">Linux</div>
+      <div class="skill-box">Git & GitHub</div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects">
+      <div class="project-card">
+        <h3>Custom Transformer LLM</h3>
+
+        <p>
+          Built a complete Transformer-based language model from scratch with
+          tokenization, embeddings, multi-head attention, training pipeline,
+          and autoregressive inference.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">LLMs</span>
+          <span class="tag">Transformers</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>rslearn-ml</h3>
+
+        <p>
+          Custom machine learning framework inspired by scikit-learn with
+          modular architecture and reusable ML utilities.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Framework Design</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Rusky Discord Bot</h3>
+
+        <p>
+          Powerful Discord bot, for server management, contains everything to manage a Discord server.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Discord Bot</span>
+        </div>
+      </div>
+
+      
+
+      <div class="project-card">
+        <h3>AI Virtual Assistant</h3>
+
+        <p>
+          Jarvis-style AI assistant with voice commands,  
+          and chatbot capabilities.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Voice AI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services">
+      <div class="service-box">AI Chatbot Development</div>
+      <div class="service-box">Python Automation</div>
+      <div class="service-box">Machine Learning Projects</div>
+      <div class="service-box">Custom AI Assistants</div>
+      <div class="service-box">Discord Bot Development</div>
+      <div class="service-box">NLP Systems</div>
+      <div class="service-box">Linux Automation</div>
+      <div class="service-box">Debugging Tools</div>
+    </div>
+  </section>
+
+  <section class="container" style="text-align:center;">
+    <h2 class="section-title">Let's Build Something Cool</h2>
+
+    <p style="max-width:700px; margin:auto; color:#cfcfcf; line-height:1.7; margin-bottom:40px;">
+      Interested in AI systems, automation tools, chatbots, Discord Bot, or custom ML projects?
+      Let's connect.
+    </p>
+
+    <div class="buttons">
+      <a href="mailto:rustambhadouriya7@gmail.com" class="btn btn-primary">
+        Email Me
+      </a>
+
+      <p class="btn btn-primary">itz_rustam (discord)</p>
+
+    </div>
+    <div class="buttons">
+      <a href="https://github.com/ItzRustam" target="_blank" class="btn btn-outline">
+        View GitHub
+      </a>
+
+      <a href="resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Rustam Singh • AI Developer Portfolio
+  </footer>
+
+</body>
+</html>
